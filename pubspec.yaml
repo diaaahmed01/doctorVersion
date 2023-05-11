@@ -1,0 +1,46 @@
+name: final_project
+description: A new Flutter project.
+
+publish_to: "none" 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+
+
+dependencies:
+  shared_preferences: ^2.0.8
+  calendar_timeline: ^1.1.2
+  bloc: ^8.1.1
+  cupertino_icons: ^1.0.2
+  equatable: ^2.0.5
+ 
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  h3m_shimmer_card: ^0.0.2
+  flutter_rating_bar: 4.0.1
+  flutter_screenutil: ^5.7.0
+  get: ^4.6.5
+  google_fonts: ^4.0.3
+  lottie: ^2.3.2
+  persistent_bottom_nav_bar: ^5.0.2
+  
+  awesome_dialog: ^3.0.2
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  generate: true
+  uses-material-design: true
+ 
