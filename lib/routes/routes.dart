@@ -50,6 +50,12 @@ class AppRouter {
           builder: (_) => const Notifications(),
         );
 
+      case '/AppointmentDetails':
+        final appointment = routeSettings.arguments as Appointment;
+        return MaterialPageRoute(
+          builder: (_) => AppointmentDetails(appointment: appointment),
+        );
+
       case '/Requests':
         return MaterialPageRoute(
           builder: (_) => const RequestsPage(),
@@ -97,11 +103,6 @@ class AppRouter {
       case '/DoctorSchedule':
         return MaterialPageRoute(
           builder: (_) => const DoctorSchedule(),
-        );
-
-      case '/AppointmentDetails':
-        return MaterialPageRoute(
-          builder: (_) => AppointmentDetails(),
         );
 
       case '/myprofile':

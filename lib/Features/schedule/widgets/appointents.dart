@@ -13,7 +13,8 @@ class AppointmentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/Prescription');
+        Navigator.pushNamed(context, '/AppointmentDetails',
+            arguments: appointment);
       },
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
