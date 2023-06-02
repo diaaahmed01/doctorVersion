@@ -1,8 +1,6 @@
-import 'routes/routes.dart';
+import 'common/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
   runApp(MyApp(
@@ -31,11 +29,6 @@ class _MyAppState extends State<MyApp> {
           return SafeArea(
             child: MaterialApp(
               onGenerateRoute: widget.appRouter.onGenerateRoute,
-              // home: ShimmerTest(),
-              localizationsDelegates: AppLocalizations.localizationsDelegates,
-              supportedLocales: AppLocalizations.supportedLocales,
-              locale: Locale('en', ''),
-
               debugShowCheckedModeBanner: false,
             ),
           );
